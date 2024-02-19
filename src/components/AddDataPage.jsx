@@ -18,7 +18,7 @@ const AddDataPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addData(formData));
+    dispatch(addData(formData)); // Dispatch action with form data
     setFormData({
       field1: '',
       field2: '',

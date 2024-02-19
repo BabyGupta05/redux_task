@@ -27,6 +27,7 @@ const DataTablePage = () => {
           ))}
         </tbody>
       </table>
+      
     </div>
   );
 };

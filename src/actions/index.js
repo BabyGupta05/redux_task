@@ -1,6 +1,8 @@
+// Define action type
 export const ADD_DATA = 'ADD_DATA';
 
-export const addData = (data) => ({
+// Action creator function
+export const addData = (formData) => ({
   type: ADD_DATA,
-  payload: data
+  payload: formData
 });

@@ -8,8 +8,8 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" component={AddDataPage} />
-          <Route path="/data-table" component={DataTablePage} />
+          <Route path="/" element={<AddDataPage />} /> 
+          <Route path="/data-table" element={<DataTablePage />} /> 
         </Routes>
       </div>
     </Router>
