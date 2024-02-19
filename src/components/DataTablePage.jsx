@@ -1,9 +1,9 @@
 import React from 'react';
+
 import { useSelector } from 'react-redux';
-
 const DataTablePage = () => {
-  const dataList = useSelector((state) => state.data.dataList);
 
+  const dataList = useSelector(state => state.dataReducer.dataList)
   return (
     <div>
       <h2>Data Table</h2>
@@ -17,7 +17,7 @@ const DataTablePage = () => {
           </tr>
         </thead>
         <tbody>
-          {dataList.map((data, index) => (
+          {dataList?.map((data, index) => (
             <tr key={index}>
               <td>{data.field1}</td>
               <td>{data.field2}</td>
@@ -27,7 +27,6 @@ const DataTablePage = () => {
           ))}
         </tbody>
       </table>
-      
     </div>
   );
 };

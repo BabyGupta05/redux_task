@@ -1,17 +1,16 @@
-import { ADD_DATA } from '../actions';
+import { ADD_DATA } from '../actions/index';
 
-// Initial state
 const initialState = {
   dataList: []
 };
 
-// Reducer function
 const dataReducer = (state = initialState, action) => {
+  console.log(action.payload)
   switch (action.type) {
     case ADD_DATA:
       return {
-        ...state,
-        dataList: [...state.dataList, action.payload] // Add the new data to dataList array
+        ...state, 
+        dataList: [...state.dataList, action.payload] 
       };
     default:
       return state;

@@ -9,7 +9,7 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<AddDataPage />} /> 
-          <Route path="/data-table" element={<DataTablePage />} /> 
+          <Route path="/data-table" exact element={<DataTablePage />} /> 
         </Routes>
       </div>
     </Router>
